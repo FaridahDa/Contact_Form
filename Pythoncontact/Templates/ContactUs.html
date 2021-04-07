@@ -2,12 +2,16 @@
 <html>
 <head>
 <!-- My stylesheet-->
-<link href="ContactUs.css" rel="stylesheet" type="text/css"/>
+ <link rel="stylesheet" href="{{ url_for('static', filename='ContactUs.css') }}">
+<title>
+    Contact Us
+</title>
 
 </head>
 <body>
+{% block main %}
 <div class="container">
-    <form action="">
+    <form action="{{ url_for('contact_us') }}" method="post">
         <h1> Contact Form</h1>
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="First Name">
@@ -31,16 +35,17 @@
         <select id="subject" name="subject">
             <option value="General queries">General queries</option>
             <option value="Order tracking">Order tracking</option>
-            <option vaule="Incidents with order">Incidents with order</option>
+            <option value="Incidents with order">Incidents with order</option>
             <option value="Complaint">Complaint</option>"
         </select>
 
         <label for="message">Message</label>
         <textarea id ="message" name="message" placeholder="Message" style="height:200px"></textarea>
-        <input type="submit" value="Submit Form">
+        <input type="submit" value="Submit">
     </form>
 
 </div>
+{% endblock%}
 </body>
 
 </html>

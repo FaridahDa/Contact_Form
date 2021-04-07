@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Contact_Form.iml" filepath="$PROJECT_DIR$/.idea/Contact_Form.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/flaskpart1/.idea/flaskpart1.iml" filepath="$USER_HOME$/PycharmProjects/flaskpart1/.idea/flaskpart1.iml" />
     </modules>
   </component>
 </project>
