@@ -16,8 +16,9 @@ body {
     padding:20px 30px;
     max-width:calc(100vw - 40px);
     box-sizing:border-box;
-    font-family:'Didot LT STD','Montserrat',sans-serif;
-    position:relative}
+    font-family: sans-serif;
+    position: center;
+    }
   
   input[type=text], select, textarea {
     width: 100%;

@@ -6,7 +6,7 @@ app = Flask(__name__)
 mydb = mysql.connector.connect(
     host="127.0.0.1",
     user="root",
-    password="*********",
+    password="******",
     database="pythoncontactform2"
 )
 
@@ -14,10 +14,6 @@ mycursor = mydb.cursor()
 
 
 @app.route('/')
-def root():
-    return "hello World"
-
-
 @app.route('/home', methods=['GET'])
 def home():
     return render_template('ContactUs.html')
